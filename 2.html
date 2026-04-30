@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Peserta</title>
+
+  <!-- 
+  css : 3 (internal, exernal, inline) -->
+
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      background-color: #3333;
+    }
+
+    h2 {
+      font-family: 'Times New Roman', Times, serif;
+      color: chocolate;
+    }
+
+    p {
+      font-family: 'Times New Roman', Times, serif;
+      color: black;
+      font-size: 20px;
+    }
+
+    .form-group {
+      
+      color: red;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 600;
+      font-size: 15px;
+    }
+
+    input{
+      width: 50%;
+      font-size: 15px;
+      padding: 12px 16px;
+      border-radius: 15px;
+      outline: none;
+      box-sizing: border-box;
+      transition: border-color 0.3s;
+    }
+
+    input:focus {
+      border-color: aqua;
+    }
+
+    .btn-submit, .btn-reset{
+      width: 50%;
+      padding: 15px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .btn-submit{
+      background-color: greenyellow;
+      color: black;
+    }
+
+    .btn-submit:hover {
+      background-color: green;
+    }
+
+    .btn-reset{
+      background-color: red;
+      color: black;
+
+    }
+
+    .btn-reset:hover {
+      background-color: maroon;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Pendaftaran Siswa</h2>
+  <p>Silahkan Isi Data Diri Anda</p>
+
+  <form method="post" action="3.html">
+    <div class="form-group">
+      <label for="nama">Nama</label>
+      <input type="text" placeholder="Masukan Nama" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" placeholder="Contoh: admin@gmail.com" required>
+    </div>
+    <div class="form-group">
+      <label for="notlp">No. Handphone</label>
+      <input type="number" placeholder="089756542632" required>
+    </div>
+    <div class="form-group">
+      <!-- <button type="submit" class="btn-submit">Simpan</button> -->
+      <input type="submit" class="btn-submit" value="Submit">
+      <input type="reset" class="btn-reset" value="Batal">
+    </div>
+
+  </form>
+</body>
+</html>

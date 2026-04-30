@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Peserta</title>
+
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      background-color: #3333;
+      font-size: 15px;
+    }
+
+    .card-table{
+      background-color: white;
+      padding: 30px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px black;
+      width: 80%;
+      max-width: 800px;
+      margin: 50px auto;
+    }
+
+    h2,
+    p {
+      text-align: center;
+    }
+
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      /* menghilangkan border kecil di table */
+      margin-top: 20px;
+      font-size: 15px;
+    }
+
+    .table thead tr {
+      background-color: #f5f5f5;
+      color: black;
+      text-align: center;
+    }
+
+    .table th, .table td {
+      border-bottom: 1px solid;
+      padding: 12px 15px;
+      text-align: center;
+    }
+
+    .btn-plus {
+      text-align: right;
+    }
+
+    .btn-tambah{
+      display: inline; /*button ngikutin panjang karakter text */
+      padding: 10px 20px;
+      background-color: greenyellow;
+      color: black;
+      border-radius: 15px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+      transition: background 0.3s;
+    }
+  </style>
+</head>
+<body>
+  <div class="card-table">
+    <h2>Data Peserta</h2>
+    <p>Data berikut adalah data peserta</p>
+
+    <div class="btn-plus" align="right">
+      <a href="2.html" class="btn-tambah"> + Tambah Peserta</a>
+    </div>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Nama</th>
+          <th>Email</th>
+          <th>No telp</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>yoga</td>
+          <td>lilynaf@gmail.com</td>
+          <td>123456789</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Mbud</td>
+          <td>Mbud@gmail.com</td>
+          <td>123456789</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
