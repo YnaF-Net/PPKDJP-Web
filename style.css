@@ -5,6 +5,7 @@ html {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: rgb(0, 0, 0);
   line-height: 1.6;
+  scroll-behavior: smooth;
 }
 
 .parallax {
@@ -29,7 +30,7 @@ html {
 
 .content {
   /* rgba: red, green, blue, alpha */
-  background-color: rgba(218, 206, 206, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   color: white;
   padding: 40px;
   border-radius: 15px;
@@ -43,18 +44,48 @@ html {
 
 .normal-section {
   padding: 80px 20px;
-  background-color: white;
+  background-color: rgb(153, 153, 155);
+  text-align: center;
+}
+
+.normal-section1 {
+  padding: 80px 20px;
+  background-color: rgb(202, 173, 135);
   text-align: center;
 }
 
 .container {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.7s;
+  margin: 0 auto;
+}
+
+.gallery img:hover {
+  transform: scale(1.55);
+}
+
+/* Ukuran HP */
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
 }
 
 h1 {
   font-size: 2rem;
-  color: rgb(17, 243, 243);
+  color: rgb(64, 64, 68);
 }
 
 p {
@@ -65,7 +96,8 @@ p {
 
 h2 {
   font-size: 3rem;
-  color: rgb(64, 64, 68);
+  color: rgb(255, 255, 255);
+  
 }
 
 h3 {
@@ -84,10 +116,11 @@ h3 {
   margin-top: 20px;
 }
 
-.footer {
-  background-color: #333;
+footer {
+  background-color: #ffebb3;
   text-align: center;
   padding: 20px 0;
+  color: blue;
 }
 
 .contact-form {
@@ -99,12 +132,12 @@ h3 {
 .contact-form input,
 textarea {
   padding: 10px;
-  border: 1px solid violet;
+  border: 1px solid rgb(117, 3, 117);
   border-radius: 5px;
 }
 
 .contact-form button {
-  background: lightgreen;
+  background: rgb(86, 197, 86);
   color: black;
   padding: 8px;
   border: none;
@@ -131,7 +164,7 @@ textarea {
 
 .skill-wraper h3 {
   margin-top: 0px;
-  color: blue;
+  color: rgb(82, 82, 82);
 }
 
 .skill-wraper ul {
@@ -152,3 +185,69 @@ textarea {
   border-radius: 10%;
   width: 250px;
 }
+
+.navbar {
+  background-color: rgba(61, 61, 61, 0.7);
+  position: fixed;
+  width: 100%;
+  /* text-align: center; */
+}
+
+nav a {
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  transition: 1s;
+  padding: 20px;
+}
+
+nav a:hover {
+  color: #f77373;
+}
+
+.logo {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+/* BURGER MENU START */
+#menu {
+  display: flex;
+  gap: 15px;
+}
+.nav-container button {
+  display: none;
+}
+
+/* Ukuran Tablet */
+@media (max-width: 768px) {
+  .nav-container button {
+    display: block;
+  }
+
+  #menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 200px;
+    padding: 10px 0px;
+  }
+  #menu a {
+    padding: 10px;
+  }
+  #menu.show {
+    display: flex;
+  }
+}
+/* BURGER MENU END */

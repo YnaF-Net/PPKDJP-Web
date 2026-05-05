@@ -9,24 +9,40 @@
 </head>
 
 <body>
-  <section class="parallax bg-1">
+  <header class="navbar">
+    <div class="nav-container">
+      <h1 class="logo"> My Portfolio</h1>
+
+      <button onclick="togglemenu()">☰</button>
+      <nav id="menu">
+        <a href="#profil">Profil</a>
+        <a href="#about">About</a>
+        <a href="#ability">Ability</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  
+  </header>
+  <section id="profil" class="parallax bg-1">
     <div class="content">
       <h1>Halo, Nama Saya Fany Prayoga</h1>
       <img src="img/yilong Ma.png" alt="" class="profil-img">
       <p>Web Programmer</p>
     </div>
   </section>
-  <section class="normal-section">
+  <section id="about" class="normal-section">
     <div class="container">
       <h2>Tentang Saya</h2>
+      <div class="gallery">
       <img src="img/Rap.avif" alt="" class="gambar">
       <img src="img/Sing.avif" alt="" class="gambar">
       <img src="img/music.avif" alt="" class="gambar">
       <img src="img/dj.avif" alt="" class="gambar">
       <p>Saya adalah Ultraman</p>
+      </div>
     </div>
   </section>
-  <section class="parallax bg-2">
+  <section id="ability" class="parallax bg-2">
     <div class="content">
       <h2>Keahlian Saya</h2>
       <div class="wraper">
@@ -50,7 +66,7 @@
       </div>
     </div>
   </section>
-  <section class="normal-section">
+  <section id="contact" class="normal-section1">
     <div class="container">
       <h2>Hubungi Saya</h2>
       <p>Tertarik menjadi Ultraman? Kirimkan pesan melalui email atau media sosial saya</p>
@@ -66,6 +82,12 @@
   <footer>
     <p>&copy; 2026 Personal Brand. Dibuat di PPKD JP</p>
   </footer>
+
+  <script>
+    function togglemenu() {
+      document.getElementById("menu").classList.toggle("show");
+    }
+  </script>
 </body>
 
 </html>
