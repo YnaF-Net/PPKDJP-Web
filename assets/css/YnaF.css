@@ -1,11 +1,11 @@
-:root{
+:root {
   --primary-color: #0058be;
   --surface-color: #f7f9fb;
   --on-surface-variant: #424754;
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   background-color: var(--surface-color);
   color: #191c1e;
 }
@@ -29,27 +29,31 @@ body {
 }
 
 .hero-img-container {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    border: 1px solid #c2c6d6;
-    background-color: white;
-    padding: 12px;
-    border-radius: 16px;
-    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 10%), 0 8px 10px -6px rgb(0 0 0 / 10%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border: 1px solid #c2c6d6;
+  background-color: white;
+  padding: 12px;
+  border-radius: 16px;
+  box-shadow:
+    0 20px 25px -5px rgb(0 0 0 / 10%),
+    0 8px 10px -6px rgb(0 0 0 / 10%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .hero-img-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 10%), 0 8px 10px -6px rgb(0 0 0 / 10%);
-    transition: 1s;
-    filter: grayscale(75%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow:
+    0 20px 25px -5px rgb(0 0 0 / 10%),
+    0 8px 10px -6px rgb(0 0 0 / 10%);
+  transition: 1s;
+  filter: grayscale(75%);
 }
 
 .hero-img-container img:hover {
@@ -57,5 +61,38 @@ body {
 }
 
 .soft-shadow {
-  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05) ;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+}
+
+.project-card {
+  background-color: white;
+  border: 1px solid #c2c6d6;
+  border-radius: 16px;
+  padding: 30px;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.08);
+}
+
+.project-card img {
+  border-radius: 10px;
+  box-shadow:
+    0 20px 25px -5px rgb(0 0 0 / 10%),
+    0 8px 10px -6px rgb(0 0 0 / 10%);
+  transition: 1s;
+}
+.project-card:hover img {
+  transform: scale(1.05);
+  transition: 1s;
+}
+
+.badge-tech {
+  background-color: rgba(0, 88, 190, 0.5);
+  color: var(--primary-color);
+  border: 1px solid rgba(0, 88, 190, 0.1);
+  font-size: 12px;
+  font-weight: 700;
 }
